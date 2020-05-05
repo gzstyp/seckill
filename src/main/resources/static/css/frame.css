@@ -1,0 +1,363 @@
+.main{
+    position:relative;
+    height:100%;
+}
+.left{
+    width:200px;
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    background-color:#232323;
+    -webkit-transition:left .5s;
+    transition:left .5s;
+}
+.top{
+    position:absolute;
+    right:0;
+    left:200px;
+    top:0;
+    -webkit-transition:width .5s, top .5s, left .5s;
+    transition:width .5s, top .5s, left .5s;
+}
+.top .top-tool{
+    width:100%;
+    height:50px;
+    background-color:#43AAF5;
+}
+/*top头部样式1e9fff*/
+.top .top-nav{
+    width:100%;
+    height:40px; /*-38px-*/
+    background-color:#43AAF5;
+}
+.top .top-nav{
+    background-color:#eee;
+}
+.container{
+    float:left;
+    position:absolute;
+    left:200px;
+    top:90px; /*-100px-*/
+    right:0;
+    bottom:0;
+    -webkit-transition:width .5s, top .5s, left .5s;
+    transition:width .5s, top .5s, left .5s;
+}
+.container .containerPage{
+    width:100%;
+    height:100%;
+}
+.slide-left-out{
+    left:-152px;
+}
+.slide-left-out ul.first li i.menu-arrow{
+    float:left;
+}
+.slide-left-out ul.first li i.menu-icon{
+    float:right;
+}
+.slide-left-out ul.inner-menu li{
+    padding:0 10px !important;
+}
+.slide-left-out ul.inner-menu i.menu-icon{
+    display:none;
+}
+.slide-left-out ul.inner-menu i.menu-arrow{
+    float:right !important;
+}
+/*logo样式*/
+.slide-left-out .logo i{
+    background:#75b9e6;
+    display:block !important;
+}
+/*导航菜单收缩时的样式*/
+.slide-top-out{
+    top:-100px;
+    left:48px; /*-48px-*/
+}
+/*导航菜单收缩时的样式*/
+.zoom-container{
+    top:0px;
+    left:48px; /*-48px-*/
+}
+/*logo样式*/
+.left .logo{
+    width:100%;
+    float:left;
+    background:#75b9e6;
+    position:relative;
+    cursor:pointer;
+}
+.left .logo:hover .toggle-menu-icon{
+    display:block;
+}
+/*logo样式*/
+.left .logo span{
+    color:#fff;
+    width:100%;
+    display:block;
+    line-height:50px;
+    background:#75b9e6;
+    text-align:center;
+    padding-right:20px;
+}
+.left .logo .toggle-menu-icon{
+    width:48px;
+    line-height:50px;
+    font-size:20px;
+    color:#fff;
+    position:absolute;
+    right:0;
+    top:0;
+    display:none;
+    text-align:center;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+.left .logo .toggle-menu-icon.open{
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+}
+/*右侧背景及字体颜色*/
+.left .menu{
+    margin:0;
+    padding:0;
+    color:#000;
+    float:left;
+    width:100%;
+    background:#e5e3e3;
+}
+.left ul.first{
+    position:absolute;
+    top:50px;
+    bottom:0;
+    max-height:100%;
+    overflow:hidden;
+}
+/*右侧连接默认颜色样式*/
+.left ul.first li{
+    list-style:none;
+    line-height:48px; /*-48px-*/
+    background-color:#eeeeee;
+}
+/*收缩时导航的字体颜色*/
+.left ul.first li:hover{
+    cursor:pointer;
+    color:#000000;
+}
+/*右侧连接点击展开颜色样式*/
+.left .first ul li{
+    background-color:#e5e3e3;
+    float:left;
+    width:100%;
+}
+/**右侧鼠标滑动样式*/
+.left .menu li .box:hover{
+    background:#6db5e4;
+}
+/*右侧菜单的图标样式*/
+.left .menu li i.menu-icon{
+    width:48px; /*-48px-*/
+    line-height:48px; /*-48px-*/
+    text-align:center;
+    font-size:16px;
+    float:left;
+}
+.left ul.first li:hover i.menu-icon{
+    -webkit-animation:IconRotate .5s forwards;
+    -moz-animation:IconRotate .5s forwards;
+    -o-animation:IconRotate .5s forwards;
+    animation:IconRotate .5s forwards;
+}
+/**右侧导航的向下向上的符号的颜色样式*/
+.left .menu li i.menu-arrow{
+    color:#000000;
+    right:0px;
+    width:24px;
+    line-height:48px; /*-48px-*/
+    text-align:center;
+    float:right;
+}
+/**顶部导航栏|标题栏位*/
+.top .tab{
+    width:130px;
+    float:left;
+    margin-left:5px;
+    margin-top:0px; /*-2px-*/
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    background:#dcdcdc;
+    padding:0 8px;
+    text-align:center;
+}
+/**每个标签的标题样式*/
+.top .tab span{
+    width:88px;
+    height:40px; /*-35px-*/
+    line-height:40px; /*-35px-*/
+    float:left;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+/*top的标题栏位关闭按钮样式*/
+.top .tab i{
+    font-size:12px;
+    margin-left:10px;
+    float:right;
+    margin-top:6px; /*-12px-*/
+}
+/**top标题的样式,可以改为手势a的样式*/
+.top .tab:hover{
+    cursor:default;
+}
+.top .tab.open{
+    background:#f8f8f8;
+}
+.top .top-nav{
+    position:relative;
+}
+/* < 和 > 样式*/
+.top .top-nav .tab-pre:hover,
+.top .top-nav i.tab-next:hover{
+    cursor:pointer;
+    color:#337ab7;
+}
+/**top标题的向右>的高度样式*/
+.top .top-nav i.tab-pre,
+.top .top-nav i.tab-next{
+    line-height:40px; /*-38px-*/
+    width:30px;
+    text-align:center;
+    font-size:18px;
+    color:#999999;
+}
+.top .top-nav i.tab-pre{
+    float:left;
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.top .top-nav i.tab-next{
+    float:right;
+}
+/**控制top标题栏位的右边距和右边距的空隙*/
+.top .top-nav .tab-scroll{
+    position:absolute;
+    /*left: 30px;//还需要把<i class="icon-sk027 tab-pre" title="上一页"></i>的注释去掉
+    right: 30px;//还需要把<i class="icon-sk027 tab-pre" title="上一页"></i>的注释去掉*/
+    height:100%;
+    overflow:hidden;
+}
+.top .top-nav .tab-container{
+    width:0;
+    float:left;
+    height:100%;
+    padding-right:5px;
+}
+.float-menu{
+    position:fixed !important;
+    color:#ffffff;
+    padding-left:10px; /*-10px-*/
+    z-index:1;
+}
+.float-arrow{
+    border-left:5px solid transparent;
+    border-right:5px solid #eeeeee;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    position:absolute;
+    left:0px;
+    top:15px;
+}
+/*收缩时导航的字体颜色*/
+.float-menu ul{
+    background:#eeeeee;
+    border-radius:4px;
+    padding:2px;
+    color:#000000;
+}
+.float-menu ul li{
+    width:auto !important;
+    padding:0 10px;
+    line-height:40px;
+    float:none !important;
+}
+/*浮动菜单的鼠标滑动样式*/
+.float-menu ul li:hover{
+    background:#6db5e4;
+    cursor:pointer;
+}
+/**浮动菜单的向右 > 的颜色*/
+.float-menu ul li i{
+    float:right;
+    font-size:12px;
+    margin-top:19px;
+    color:#000000;
+}
+.float-menu ul li:hover i{
+    color:#000000;
+}
+/****========帧动画=======****/
+@-webkit-keyframes IconRotate{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+@-moz-keyframes IconRotate{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+@-o-keyframes IconRotate{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+@keyframes IconRotate{
+    from{
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
